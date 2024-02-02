@@ -1,0 +1,110 @@
+.wrapper_footer {
+    background: url("../../../public/footerBackground.png")  no-repeat;
+    width: 100vw;
+    height: 34.375rem;
+    min-height: 40vh;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    flex-direction: column;
+    padding: 5rem;
+    h2 {
+        font-size: 2.75rem;
+        line-height: 140%;
+        font-weight: 700;
+        text-align: center;
+        width: 50%;
+        color: #444950;
+        margin: 0px;
+    }
+    p {
+        color: #939393;
+        text-align: center;
+        font-size: 0.938rem;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 180%; /* 27px */
+    }
+}
+.footer_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:  -6rem;
+}
+
+
+.footer_input {
+    width: 360px;
+    height: 3.063rem;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    flex-grow: 1;
+    border-radius: 100px;
+    border: 1px solid  #EFA693;
+    background: var(--White, #ffffff);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: #939393;
+
+}
+
+input::placeholder {
+    position: relative;
+    left: 0.99rem; /* Ajusta el valor según tu necesidad */
+    color: #888; /* Color del marcador de posición personalizado */
+}
+
+.footer_button {
+    padding: 1px 30px;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #EFA693;
+    opacity: 0.9;
+    background: #EFA693;
+    height: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+.container_input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    span{
+        margin-top: 1rem;
+    }
+}
+
+
+/* mobil */
+@media screen and (max-width: 760px) {
+    .wrapper_footer{
+        padding: 1rem;
+        height: 38.375rem;
+    }
+    h2{
+        font-size: 1.75rem !important;
+        width: 100% !important;
+    }
+    .footer_input{
+        width: 235px
+    }
+    .footer_form{
+        flex-direction: column;
+        margin-bottom:  -7rem;
+
+    }
+}

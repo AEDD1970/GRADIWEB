@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Filson Pro";
+    src: local('Filson Pro'), url('../assets/fonts/FilsonProRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neogrotesk Ess";
+    src: local('Neogrotesk Ess'), url('../assets/fonts/NeogroteskEssRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Filson Pro', "Abhaya Libre", -apple-system, BlinkMacSystemFont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+
+h1, h2,
+h3, h4, h5 {
+    font-family: 'Abhaya Libre';
+}
+
+button {
+    font-family: 'Neogrotesk Ess';
+}
+
+p, span {
+    font-family: 'Filson Pro';
+}
+input{
+    font-family: "Filson Pro";
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.header {
+    background-color: #ffdcd3;
+    height: 32px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+}
+
+.main_section {
+   
+    margin: 2em auto;
+    padding: 2em;
+   
+}
+.container_btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btn_browse{
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #EFA693;
+    opacity: 0.9;
+    background: #EFA693;
+    height: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 14.813rem;
+    margin-bottom: 5rem;
+}
+
+/* mobil */
+
+@media screen and (max-width: 760px) {
+    .main_section{
+        padding: 1.5rem;
+        margin: auto;
+    }
+    .btn_browse{
+        margin-bottom: 2rem;
+    }
+  }
