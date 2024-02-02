@@ -90,7 +90,7 @@ async function renderCardCarousel() {
     carousel.innerHTML = renderDivCard;
 }
 
-setTimeout(renderCardCarousel, 100);
+setTimeout(renderCardCarousel, 1000);
 
 
 function calcularEstrellas(valor) {
