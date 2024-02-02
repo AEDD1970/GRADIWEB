@@ -15,7 +15,6 @@ app.use(cors(corsOptions));
 
 // Configurar el directorio estático para archivos HTML, CSS, etc.
 app.use(express.static(path.join(__dirname, 'src'), { 'Content-Type': 'application/javascript' }));
-// app.use(express.static(path.join(__dirname, 'public'), { 'Content-Type': 'application/javascript' }));
 
 
 // Ruta para renderizar el index.html

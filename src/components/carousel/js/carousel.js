@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", renderizarCarousel);
 
 async function renderCardCarousel() {
     const carousel = document.getElementById("carouselCard");
-    carousel.innerHTML = "";
+    
     const { products } = await window.api.get(
         "https://gradistore-spi.herokuapp.com/products/all"
     );
